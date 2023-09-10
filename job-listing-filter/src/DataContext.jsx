@@ -16,11 +16,16 @@ const DataProvider = ({ children }) => {
     setFilterList([]);
   };
 
+  const removeFilter = (attr) => {
+    const updatedFilterList = filterList.filter((filter) => filter !== attr);
+    setFilterList(updatedFilterList);
+  };
+
   return (
-    <DataContext.Provider value={{ filterList, addFilter, clearFilter }}>
+    <DataContext.Provider value={{ filterList, addFilter, clearFilter, removeFilter }}>
       {children}
     </DataContext.Provider>
-  ); 
+  );
 };
 
 export { DataContext, DataProvider };
