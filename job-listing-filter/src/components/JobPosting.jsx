@@ -1,5 +1,10 @@
 /* eslint-disable react/prop-types */
+import { useContext } from "react";
+import { DataContext } from "../DataContext";
+
 function JobPosting({ item }) {
+  const { addFilter } = useContext(DataContext);
+
   return (
     <>
       <div className="main-container">
@@ -26,13 +31,17 @@ function JobPosting({ item }) {
             </div>
           </div>
           <div className="right-container">
-            <button>{item.role}</button>
-            <button>{item.level}</button>
+            <button onClick={() => addFilter(item.role)}>{item.role}</button>
+            <button onClick={() => addFilter(item.level)}>{item.level}</button>
             {item.languages.map((lang) => (
-              <button key={lang}>{lang}</button>
+              <button key={lang} onClick={() => addFilter(lang)}>
+                {lang}
+              </button>
             ))}
             {item.tools.map((tool) => (
-              <button key={tool}>{tool}</button>
+              <button key={tool} onClick={() => addFilter(tool)}>
+                {tool}
+              </button>
             ))}
           </div>
         </div>
