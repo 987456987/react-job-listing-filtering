@@ -8,7 +8,7 @@ function JobPosting({ item }) {
   return (
     <>
       <div className="main-container">
-        <div className="edge"></div>
+      <div className={`edge${item.featured ? ' featured-edge' : ''}`}></div>
         <div className="content-container">
           <div className="left-container">
             <img src={item.logo} className="logo" />
