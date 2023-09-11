@@ -28,3 +28,16 @@ main {
   height: fit-content;
 }
 
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  display: flex;
+}
+
+.filter {
+  display: flex;
+}
+
