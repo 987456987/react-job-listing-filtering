@@ -22,24 +22,24 @@ function JobPosting({ item }) {
                 <h2>{item.position}</h2>
               </div>
               <div className="bottom-container">
-                <p>{item.postedAt}</p>
+                <p className="job-details">{item.postedAt}</p>
                 <div className="dot"></div>
-                <p>{item.contract}</p>
+                <p className="job-details">{item.contract}</p>
                 <div className="dot"></div>
-                <p>{item.location}</p>
+                <p className="job-details">{item.location}</p>
               </div>
             </div>
           </div>
           <div className="right-container">
-            <button onClick={() => addFilter(item.role)}>{item.role}</button>
-            <button onClick={() => addFilter(item.level)}>{item.level}</button>
+            <button className="filter-button" onClick={() => addFilter(item.role)}>{item.role}</button>
+            <button className="filter-button" onClick={() => addFilter(item.level)}>{item.level}</button>
             {item.languages.map((lang) => (
-              <button key={lang} onClick={() => addFilter(lang)}>
+              <button className="filter-button" key={lang} onClick={() => addFilter(lang)}>
                 {lang}
               </button>
             ))}
             {item.tools.map((tool) => (
-              <button key={tool} onClick={() => addFilter(tool)}>
+              <button className="filter-button" key={tool} onClick={() => addFilter(tool)}>
                 {tool}
               </button>
             ))}

@@ -31,7 +31,6 @@ main {
 .main-container {
   width: 100vw;
   max-width: 1440px;
-  background-color: white;
   border-radius: 10px;
 
   box-shadow: .5em .75em 1em 0px hsla(180, 29%, 50%, 25%);
@@ -41,12 +40,16 @@ main {
  align-items: center;
  justify-content: space-between;
  width: 100%;
-
+ background-color: white;
  padding: 2em 2.5em;
 }
 
 .left-container {
   gap: 1.5em;
+}
+
+.bottom-container {
+  align-items: center;
 }
 
 .info-container {
@@ -74,7 +77,7 @@ main {
 }
 
 .edge {
-  width: .3em;
+  width: .4em;
   border-radius: 10px 0 0 10px;
 }
 
@@ -82,3 +85,83 @@ main {
   background-color: var(--desaturated-dark-cyan);
 }
 
+
+/* //////////////////////////////////////
+////////////////////////////////////// */
+
+h2 {
+  color: var(--very-dark-grayish-cyan);
+}
+
+h2:hover {
+  color: var(--desaturated-dark-cyan);
+  cursor: pointer;
+}
+
+h3 {
+  color: var(--desaturated-dark-cyan);
+  margin-right: .5em;
+}
+
+.job-details {
+  color: var(--dark-grayish-cyan)
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+
+  background-color: var(--dark-grayish-cyan);
+
+  border-radius: 50%;
+
+  margin: 0 1em;
+}
+
+.new {
+
+  font-size: .8em;
+  color: white;
+
+  background-color: var(--desaturated-dark-cyan);
+
+  border-radius: 30px;
+
+  display: grid;
+  place-content: center;
+  width: 3.75em;
+  height: 2em;
+
+  margin: 0 .25em;
+}
+
+.featured {
+  font-size: .8em;
+  color: white;
+
+  background-color: var(--very-dark-grayish-cyan);
+
+  border-radius: 30px;
+
+  display: grid;
+  place-items: center;
+  width: 6.75em;
+  height: 2em;
+
+  margin: 0 .25em;
+}
+
+.filter-button {
+  background-color: var(--light-grayish-cyan-filter-tablets);
+  color: var(--desaturated-dark-cyan);
+  padding: .5em;
+  border: none;
+
+  margin-left: 1em;
+}
+
+.filter-button:hover {
+  color: white;
+  background-color: var(--desaturated-dark-cyan);
+  cursor: pointer;
+}
