@@ -6,7 +6,7 @@
   --very-dark-grayish-cyan: hsl(180, 14%, 20%);
 }
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -22,26 +22,31 @@ main {
   width: 100vw;
   background-color: var(--light-grayish-cyan-background);
   gap: 1.5em;
+  padding-top: 5em;
 }
 
-.content-container, .main-container, .left-container, .top-container, .bottom-container {
+.content-container,
+.main-container,
+.left-container,
+.top-container,
+.bottom-container {
   display: flex;
 }
 
 .main-container {
   width: 100vw;
   max-width: 1440px;
-  border-radius: 10px;
-
-  box-shadow: .5em .75em 1em 0px hsla(180, 29%, 50%, 25%);
 }
 
 .content-container {
- align-items: center;
- justify-content: space-between;
- width: 100%;
- background-color: white;
- padding: 2em 2.5em;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  padding: 2em 2.5em;
+
+  box-shadow: 0.5em 0.75em 1em 0px hsla(180, 29%, 50%, 25%);
 }
 
 .left-container {
@@ -57,22 +62,44 @@ main {
   justify-content: space-between;
 }
 
-
 .logo {
   width: fit-content;
   height: fit-content;
 }
 
 header {
-  max-width: 1440px;
-  margin: auto;
+  background-color: var(--desaturated-dark-cyan);
 
-  padding: 1.5em 2.53em;
+  height: 150px;
+
+  background-image: url("images/bg-header-desktop.svg");
+
+  background-size:cover;
+  background-repeat: no-repeat;
+
+  display: grid;
+  place-content: center;
+
 }
 
 .filter-container {
   display: flex;
   justify-content: space-between;
+
+  background-color: white;
+
+  border-radius: 5px;
+
+  padding: 1.5em 2.53em;
+
+  width: 100vw;
+  
+  max-width: 1440px;
+
+
+  position: relative;
+
+  top: 5em;
 }
 
 .filters {
@@ -86,13 +113,13 @@ header {
 
 .filter-text {
   background-color: var(--light-grayish-cyan-filter-tablets);
-  padding: .25em;
+  padding: 0.25em;
   color: var(--desaturated-dark-cyan);
   border-radius: 5px 0 0 5px;
 }
 
 .filter-x {
-  padding: 0 .5em;
+  padding: 0 0.5em;
 
   font-size: 16px;
 
@@ -124,14 +151,13 @@ header {
 }
 
 .edge {
-  width: .4em;
+  width: 0.4em;
   border-radius: 10px 0 0 10px;
 }
 
 .featured-edge {
   background-color: var(--desaturated-dark-cyan);
 }
-
 
 /* //////////////////////////////////////
 ////////////////////////////////////// */
@@ -147,11 +173,11 @@ h2:hover {
 
 h3 {
   color: var(--desaturated-dark-cyan);
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .job-details {
-  color: var(--dark-grayish-cyan)
+  color: var(--dark-grayish-cyan);
 }
 
 .dot {
@@ -166,8 +192,7 @@ h3 {
 }
 
 .new {
-
-  font-size: .8em;
+  font-size: 0.8em;
   color: white;
 
   background-color: var(--desaturated-dark-cyan);
@@ -179,11 +204,11 @@ h3 {
   width: 3.75em;
   height: 2em;
 
-  margin: 0 .25em;
+  margin: 0 0.25em;
 }
 
 .featured {
-  font-size: .8em;
+  font-size: 0.8em;
   color: white;
 
   background-color: var(--very-dark-grayish-cyan);
@@ -195,13 +220,13 @@ h3 {
   width: 6.75em;
   height: 2em;
 
-  margin: 0 .25em;
+  margin: 0 0.25em;
 }
 
 .filter-button {
   background-color: var(--light-grayish-cyan-filter-tablets);
   color: var(--desaturated-dark-cyan);
-  padding: .5em;
+  padding: 0.5em;
   border: none;
 
   margin-left: 1em;
