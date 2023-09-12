@@ -63,6 +63,13 @@ main {
   height: fit-content;
 }
 
+header {
+  max-width: 1440px;
+  margin: auto;
+
+  padding: 1.5em 2.53em;
+}
+
 .filter-container {
   display: flex;
   justify-content: space-between;
@@ -74,6 +81,46 @@ main {
 
 .filter {
   display: flex;
+  margin-right: 1em;
+}
+
+.filter-text {
+  background-color: var(--light-grayish-cyan-filter-tablets);
+  padding: .25em;
+  color: var(--desaturated-dark-cyan);
+  border-radius: 5px 0 0 5px;
+}
+
+.filter-x {
+  padding: 0 .5em;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  border-radius: 0 5px 5px 0;
+
+  background-color: var(--desaturated-dark-cyan);
+  color: white;
+
+  border: none;
+}
+
+.filter-x:hover {
+  background-color: var(--very-dark-grayish-cyan);
+  cursor: pointer;
+}
+
+.filter-clear-button {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: var(--desaturated-dark-cyan);
+  font-weight: bold;
+}
+
+.filter-clear-button:hover {
+  cursor: pointer;
 }
 
 .edge {

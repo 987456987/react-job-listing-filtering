@@ -12,8 +12,8 @@ function Header() {
             <div className="filters">
               {filterList.map((filter) => (
                 <div className="filter" key={filter}>
-                  <p>{filter}</p>
-                  <button onClick={() => removeFilter(filter)}>X</button>
+                  <p className="filter-text">{filter}</p>
+                  <button className="filter-x" onClick={() => removeFilter(filter)}>X</button>
                 </div>
               ))}
             </div>
