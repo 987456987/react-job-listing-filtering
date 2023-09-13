@@ -8,10 +8,11 @@ function JobPosting({ item }) {
   return (
     <>
       <div className="main-container">
-      <div className={`edge${item.featured ? ' featured-edge' : ''}`}></div>
-        <div className="content-container">
+      <img src={item.logo} className="logo logo-mobile" />
+      {/* <div className={`edge${item.featured ? ' featured-edge' : ''}`}></div> */}
+        <div className={`content-container${item.featured ? ' featured-edge' : ''}`}>
           <div className="left-container">
-            <img src={item.logo} className="logo" />
+            <img src={item.logo} className="logo logo-desktop" />
             <div className="info-container">
               <div className="top-container">
                 <h3>{item.company}</h3>
@@ -30,6 +31,7 @@ function JobPosting({ item }) {
               </div>
             </div>
           </div>
+          <div className="mobile-divider"></div>
           <div className="right-container">
             <button className="filter-button" onClick={() => addFilter(item.role)}>{item.role}</button>
             <button className="filter-button" onClick={() => addFilter(item.level)}>{item.level}</button>
