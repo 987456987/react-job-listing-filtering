@@ -13,7 +13,7 @@ function Header() {
               {filterList.map((filter) => (
                 <div className="filter" key={filter}>
                   <p className="filter-text">{filter}</p>
-                  <button className="filter-x" onClick={() => removeFilter(filter)}>X</button>
+                  <button className="filter-x" onClick={() => removeFilter(filter)}>x</button>
                 </div>
               ))}
             </div>

@@ -10,6 +10,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'League Spartan', sans-serif;
 }
 
 body {
@@ -49,6 +50,10 @@ main {
   box-shadow: 0.5em 0.75em 1em 0px hsla(180, 29%, 50%, 25%);
 }
 
+.top-container {
+  display: flex;
+}
+
 .left-container {
   gap: 1.5em;
 }
@@ -71,6 +76,7 @@ header {
   background-color: var(--desaturated-dark-cyan);
 
   height: 150px;
+  width: 100vw;
 
   background-image: url("images/bg-header-desktop.svg");
 
@@ -113,15 +119,17 @@ header {
 
 .filter-text {
   background-color: var(--light-grayish-cyan-filter-tablets);
-  padding: 0.25em;
+  padding: 0.5em;
   color: var(--desaturated-dark-cyan);
   border-radius: 5px 0 0 5px;
+
+  font-weight: bold;
 }
 
 .filter-x {
-  padding: 0 0.5em;
+  padding: 0 .4em .1em;
 
-  font-size: 16px;
+  font-size: 22px;
 
   font-weight: bold;
 
@@ -164,11 +172,15 @@ header {
 
 h2 {
   color: var(--very-dark-grayish-cyan);
+  font-size: 1.25em;
 }
 
 h2:hover {
   color: var(--desaturated-dark-cyan);
   cursor: pointer;
+
+  
+
 }
 
 h3 {
@@ -178,6 +190,7 @@ h3 {
 
 .job-details {
   color: var(--dark-grayish-cyan);
+  font-weight: bold;
 }
 
 .dot {
@@ -205,10 +218,13 @@ h3 {
   height: 2em;
 
   margin: 0 0.25em;
+
+  font-weight: bold;
 }
 
 .featured {
   font-size: 0.8em;
+  font-weight: bold;
   color: white;
 
   background-color: var(--very-dark-grayish-cyan);
@@ -230,6 +246,8 @@ h3 {
   border: none;
 
   margin-left: 1em;
+
+  font-weight: bold;
 }
 
 .filter-button:hover {
