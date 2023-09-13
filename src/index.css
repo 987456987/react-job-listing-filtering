@@ -271,7 +271,7 @@ h3 {
 @media (max-width: 1000px){
   .main-container {
     width: 95vw;
-    padding-bottom: 1.5em;
+    padding-bottom: 2em;
   }
   .content-container {
     flex-direction: column;
