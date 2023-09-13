@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <>
-      <header>
+      <header className={filterList.length > 0 && "filter-activated"}>
         {filterList.length > 0 && (
           <div className="filter-container">
             <div className="filters">
